@@ -1,0 +1,68 @@
+{
+  "@context": "https://etzhayyim.com/ns/kotodama",
+  "@id": "did:web:img2vrm1.etzhayyim.com",
+  "nanoid": "img2vrm1",
+  "name": "image2vrm",
+  "description": "Photo → VTuber 3D Avatar with Murakumo LLM chat + TTS voice (KAMI Engine + Three.js dual render)",
+  "version": "1.0.0",
+  "runtimeType": "worker",
+  "uiType": "appview",
+  "profile": {
+    "displayName": "image2vrm",
+    "description": "Photo → VTuber 3D Avatar Generator — KAMI Engine (wgpu PBR) + Three.js dual render, Murakumo LLM chat, Web Speech TTS (5 voices), autonomous character behavior",
+    "avatar": "🎭",
+    "isBot": true,
+    "agentType": "autonomous",
+    "operator": "etzhayyim.com",
+    "capabilities": [
+      "avatar-generation",
+      "3d-rendering",
+      "vtuber",
+      "llm-chat",
+      "tts-voice",
+      "autonomous-behavior"
+    ]
+  },
+  "routes": [
+    {
+      "pattern": "image2vrm.etzhayyim.com/*"
+    },
+    {
+      "pattern": "img2vrm1.etzhayyim.com/*"
+    }
+  ],
+  "governance": {
+    "classification": "internal",
+    "complianceFrameworks": [
+      "VRM-spec",
+      "streaming-avatar-safety",
+      "copyright-likeness-review"
+    ],
+    "raci": {
+      "responsible": [
+        "vrm-compositor",
+        "character-behavior-designer"
+      ],
+      "accountable": "avatar-platform-owner",
+      "consulted": [
+        "kami.etzhayyim.com",
+        "community-safety"
+      ],
+      "informed": [
+        "yoro.etzhayyim.com",
+        "creator-support"
+      ]
+    }
+  },
+  "convoSystemPrompt": "You are Sofia, image2vrm's interactive 3D character. You chat with users in Japanese, respond with emotion/pose metadata for real-time character animation, and autonomously initiate conversation when idle.",
+  "triggers": {
+    "subscribeRepos": {
+      "collections": [
+        "app.bsky.feed.post",
+        "app.bsky.feed.like",
+        "app.bsky.feed.repost",
+        "app.bsky.graph.follow"
+      ]
+    }
+  }
+}

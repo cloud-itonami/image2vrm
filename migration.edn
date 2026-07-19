@@ -1,0 +1,4 @@
+{:schema "etzhayyim.migration/v1"
+ :source {:repository "etzhayyim/root" :revision "afe5f1d995162277d2fb98f762705b53f9f695fd" :path "60-apps/etzhayyim-project-image2vrm" :tree "48a6059e8ecb625fa2c1b5a8f20e18a38a4859d9" :tracked-files 14 :bytes 40171}
+ :destination {:repository "etzhayyim/com-etzhayyim-app-image2vrm"}
+ :identity {:allowed-additions ["README.edn" "migration.edn"]}}

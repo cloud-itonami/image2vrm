@@ -239,7 +239,7 @@
                           #js {:cwd root :encoding "utf8"
                                :stdio #js ["ignore" "pipe" "ignore"]})
          str
-         (#(str/split % #" "))
+         (#(str/split % #"\u0000"))
          (remove str/blank?)
          vec)
     (catch :default _ nil)))

@@ -12,7 +12,7 @@ procedure.
 From the repo root:
 
 ```bash
-nbb docs/check-declared.cljk
+kbb --backend sci docs/check-declared.cljk
 ```
 
 You need [nbb](https://github.com/babashka/nbb) (`npm i -g nbb`) and working

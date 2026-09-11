@@ -23,7 +23,7 @@ repo's only commit before this README.
 ## Status — measured 2026-08-13
 
 Measured against tip `50247dc`, the extraction commit. Do not trust this table;
-re-take it: **`nbb docs/check-declared.cljs`** (see
+re-take it: **`nbb docs/check-declared.cljk`** (see
 [the quickstart](docs/operator-quickstart.md)). Everything below is a line of
 that program's output.
 
@@ -138,7 +138,7 @@ In dependency order, because the later items are worthless without the earlier:
 5. **Retire or rebuild `docs/character-maker-design.md`.** It designs against a
    stack this repo's own `CLAUDE.md` says was abandoned.
 
-Each of the first three flips a specific line of `docs/check-declared.cljs`
+Each of the first three flips a specific line of `docs/check-declared.cljk`
 from red to green, so progress is measurable rather than asserted.
 
 ## Licence — the rider it binds you to is not here

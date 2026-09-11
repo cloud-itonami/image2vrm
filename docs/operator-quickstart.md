@@ -12,7 +12,7 @@ procedure.
 From the repo root:
 
 ```bash
-nbb docs/check-declared.cljs
+nbb docs/check-declared.cljk
 ```
 
 You need [nbb](https://github.com/babashka/nbb) (`npm i -g nbb`) and working
@@ -90,7 +90,7 @@ a photograph.
 
 ## 4. If you change anything
 
-`docs/check-declared.cljs` doubles as the regression check for this README.
+`docs/check-declared.cljk` doubles as the regression check for this README.
 Run it after any edit:
 
 - Editing a source file without updating `migration.edn` flips the extraction

@@ -1,7 +1,7 @@
 #!/usr/bin/env nbb
-;; docs/check-declared.cljs — does anything this repo declares actually exist?
+;; docs/check-declared.cljk — does anything this repo declares actually exist?
 ;;
-;;   nbb docs/check-declared.cljs           # from the repo root
+;;   nbb docs/check-declared.cljk           # from the repo root
 ;;
 ;; This repo is a descriptor plus one small program. The descriptor claims a
 ;; great deal; the program does something else. Four things are measured, and

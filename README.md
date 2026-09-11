@@ -23,7 +23,7 @@ repo's only commit before this README.
 ## Status — measured 2026-08-13
 
 Measured against tip `50247dc`, the extraction commit. Do not trust this table;
-re-take it: **`nbb docs/check-declared.cljk`** (see
+re-take it: **`kbb --backend sci docs/check-declared.cljk`** (see
 [the quickstart](docs/operator-quickstart.md)). Everything below is a line of
 that program's output.
 

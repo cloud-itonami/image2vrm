@@ -85,7 +85,7 @@ a photograph.
 | `cd svelte && pnpm install` | fails — depends on `@etzhayyim/kami-engine-sdk` at `workspace:*`, which is not in this repo, not on npm (404), and there is no `pnpm-workspace.yaml` or lockfile here |
 | `wrangler deploy` | there is no `wrangler.toml`/`wrangler.jsonc`. `worker.js` needs `env.ASSETS` and `env.R2` bindings that nothing declares |
 | open the deployed app | `image2vrm.etzhayyim.com` and `img2vrm1.etzhayyim.com` are NXDOMAIN |
-| follow `CLAUDE.md` and call `run_embed_vrm()` | that API belongs to the KAMI Engine crates in `etzhayyim/root`, not to this repo |
+| follow `AGENTS.md` and call `run_embed_vrm()` | that API belongs to the KAMI Engine crates in `etzhayyim/root`, not to this repo |
 | read the licence rider you accepted by using this | `CHARTER-RIDER.md` is referenced by `NOTICE` and is not here |
 
 ## 4. If you change anything

@@ -3,7 +3,7 @@
 **Neither the image nor the VRM is here.** The name promises photo → VTuber
 avatar. `kotodama.jsonld` advertises an autonomous character called Sofia who
 chats in Japanese, speaks aloud, and reacts to the Bluesky firehose.
-`CLAUDE.md` documents a WebGPU pipeline in confident detail — MToon and PBR
+`AGENTS.md` documents a WebGPU pipeline in confident detail — MToon and PBR
 shaders, 57 morph targets, 54 humanoid bones, 22 spring-bone chains, a
 264-asset parts library.
 
@@ -86,12 +86,12 @@ This is the part most likely to mislead someone arriving with a task.
 
 | where | renderer described | status |
 |---|---|---|
-| `CLAUDE.md` | KAMI Engine, wgpu/WebGPU, MToon + PBR, `run_embed_vrm()` | crates are **not in this repo** — they live in `40-engine/kami-engine` in `etzhayyim/root` |
-| `docs/character-maker-design.md` | Three.js + `@pixiv/three-vrm` | **retired 2026-05-26** by ADR-2605264300, per `CLAUDE.md` itself |
+| `AGENTS.md` | KAMI Engine, wgpu/WebGPU, MToon + PBR, `run_embed_vrm()` | crates are **not in this repo** — they live in `40-engine/kami-engine` in `etzhayyim/root` |
+| `docs/character-maker-design.md` | Three.js + `@pixiv/three-vrm` | **retired 2026-05-26** by ADR-2605264300, per `AGENTS.md` itself |
 | `appview/…/public/index.html` | Canvas 2D, Gaussian splats | the only renderer that exists here |
 
 `kotodama.jsonld` compounds it by describing the app as "KAMI Engine +
-Three.js dual render" — the plan `CLAUDE.md` says was abandoned.
+Three.js dual render" — the plan `AGENTS.md` says was abandoned.
 
 The shipped file says `Initializing WebGPU...` in its status line and carries a
 `// === WebGPU 3DGS Renderer ===` banner comment. **There is no WebGPU call
@@ -117,7 +117,7 @@ Regions" prints `active` for all eleven regions unconditionally. No photograph
 is analysed because none can be supplied.
 
 Of the three viewer buttons, `Reset` and `Auto Rotate` are wired. **`Expression`
-has no handler.** Mouse-wheel zoom is documented in `CLAUDE.md` but the wheel
+has no handler.** Mouse-wheel zoom is documented in `AGENTS.md` but the wheel
 handler only calls `preventDefault()`.
 
 ## If you are here to make the declarations true
@@ -126,7 +126,7 @@ In dependency order, because the later items are worthless without the earlier:
 
 1. **Bring the renderer in, or change what the repo claims.** Either vendor
    `@etzhayyim/kami-engine-sdk` (with the workspace or lockfile that lets it
-   install) or rewrite `CLAUDE.md` and `kotodama.jsonld` to describe the splat
+   install) or rewrite `AGENTS.md` and `kotodama.jsonld` to describe the splat
    viewer that is actually here. Today a reader is told three incompatible
    things.
 2. **Give it an image intake.** `image2vrm` cannot begin without one.
@@ -136,7 +136,7 @@ In dependency order, because the later items are worthless without the earlier:
 4. **Add deployment config.** `worker.js` needs `env.ASSETS` and `env.R2`
    bindings and there is no `wrangler.toml` here to declare them.
 5. **Retire or rebuild `docs/character-maker-design.md`.** It designs against a
-   stack this repo's own `CLAUDE.md` says was abandoned.
+   stack this repo's own `AGENTS.md` says was abandoned.
 
 Each of the first three flips a specific line of `docs/check-declared.cljk`
 from red to green, so progress is measurable rather than asserted.
@@ -155,5 +155,5 @@ There is no `CHARTER-RIDER.md` in this repo, and no `LICENSE` file either — th
 tree carries additional licence terms you are told you have accepted and cannot
 read. The check covers this as its fifth arm.
 
-Separately, the VRoid-derived base model that `CLAUDE.md` describes as CC0 is
+Separately, the VRoid-derived base model that `AGENTS.md` describes as CC0 is
 not in this repo, so nothing here grants or withholds anything about that asset.

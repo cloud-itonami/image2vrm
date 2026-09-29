@@ -1,4 +1,4 @@
-# image2vrm — CLAUDE.md
+# image2vrm — AGENTS.md
 
 ## Identity
 
@@ -258,7 +258,7 @@ HeadTTS が返す Oculus viseme タイムスタンプで音素精度のリップ
 
 ```
 60-apps/etzhayyim-project-image2vrm/
-  CLAUDE.md
+  AGENTS.md
   docs/character-maker-design.md
   wasm/etzhayyim-wasm-image2vrm-img2vrm1/
     src/app.ts                   ← deploy entry (CF best practice: wrangler bundles from src)
